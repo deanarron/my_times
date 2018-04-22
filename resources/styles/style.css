@@ -1,7 +1,4 @@
 /* Header Section */
-div {
-  border: 1px solid black;
-}
 header {
   display: flex;
   align-items: center;
@@ -15,26 +12,32 @@ header {
   font-size: 14px;
   font-weight: bold;
 }
+
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
 }
+
 .logo img {
   width: 70px;
   height: 60px;
   margin-right: 12px;
 }
+
 .logo span {
   color: MediumAquamarine;
 }
+
 header nav {
   padding-right: 40px;
 }
+
 a {
   color: black;
 }
+
 nav span {
   display: inline-block;
   padding: 20px 10px;
@@ -48,11 +51,15 @@ body {
   margin: 0 auto 78px auto;
   padding-top: 116px;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
 }
+
+/* Columns */
+
 .column.large {
   width: 630px;
 }
@@ -61,4 +68,74 @@ body {
 }
 .column.small {
   width: 240px;
+}
+
+/* Images */
+
+.image-content {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/img-story-main.png");
+  margin-top: 0;
+  text-align: left;
+  width: 630px;
+  font-size: 40px;
+}
+
+.fall-cancelled {
+  background-image: url("../images/img-story-2.png");
+}
+
+.pop-culture {
+  background-image: url("../images/img-story-3.png");
+}
+
+.cat-ceo {
+  background-image: url("../images/img-story-1.png");
+}
+
+/* Flexible story sections */
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.stories .text-content {
+  height: 250px;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.narrative {
+  margin-top: 16px;
+}
+
+/* Last column */
+.news-bites {
+  display: block;
+}
+.news-bites h3 {
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.news-bites .bite {
+  display: block;
+  color: DimGray;
+  font-family: Verdana;
+  font-size: 12px;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
 }
